@@ -1,0 +1,7 @@
+docker build -t jasondebolt/nginx .
+docker run -d -p 80:80 jasondebolt/nginx
+docker ps
+verify at localhost
+docker push jasondebolt/nginx
+docker stop {sha}
+docker rm {sha}
