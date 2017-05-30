@@ -4,7 +4,7 @@
 
 FROM jasondebolt/base
 
-RUN apt-get update
+RUN apt-get update -y
 RUN apt-get install -y nginx
 
 # forward request and error logs to docker log collector
